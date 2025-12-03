@@ -1,0 +1,29 @@
+Configuration Management (Short Note)
+
+Configuration management is the process of automating, monitoring, designing, and managing system configurations across servers, networks, storage, and applications. It helps organizations maintain consistency, efficiency, and scalability without increasing IT staff. It is closely related to change management, which focuses on modifying configurations to meet new requirements.
+
+Configuration management in DevOps mainly covers three areas:
+Identification – Finding and documenting configuration needs
+Control – Managing changes in a controlled manner
+Audit – Ensuring compliance and system validation
+
+Key components include:
+
+Artifact Repository
+Source Code Repository
+Configuration Management Data Architecture
+
+Puppet (Short Explanation)
+
+Puppet is a DevOps configuration management tool developed by Puppet Labs. It automates the deployment, configuration, and management of servers using code (Infrastructure as Code). It is written in Ruby DSL and supports multiple platforms like Windows, Linux, and macOS. Puppet follows a client-server model with a Puppet Master and agent nodes.
+
+Puppet Building Blocks
+Resources – Basic units that perform tasks
+Classes – Group of related resources
+Manifest – Files (.pp) containing Puppet code
+Modules – Reusable collection of manifests and classes
+
+Here is the **short version**:
+
+* If Windows nodes fetch configurations from a **Puppet Master**, a **Linux/Unix server** is required to run the master.
+* If Windows nodes use **`puppet apply` locally**, the **Puppet Agent service should be disabled** after installation.
